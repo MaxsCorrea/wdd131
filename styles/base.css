@@ -1,0 +1,202 @@
+/* ------------------------------
+   General Styles
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #f5f7fa;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+header {
+    background-color: #17324d;
+    color: #ffffff;
+}
+
+#course-title {
+    display: block;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+
+/* ------------------------------
+   Navigation
+------------------------------ */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+nav a {
+    flex: 1 1 0;
+    display: block;
+    min-width: 120px;
+    padding: 0.9rem 1rem;
+
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+
+    border: 2px solid transparent;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #f4b942;
+    color: #17324d;
+}
+
+
+/* ------------------------------
+   Main
+------------------------------ */
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+
+    margin: 0;
+    color: #17324d;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+
+/* ------------------------------
+   Cards
+------------------------------ */
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #d6dde5;
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    margin: 0;
+    padding: 1rem;
+
+    background-color: #245b7a;
+    color: #ffffff;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+
+    padding: 1.5rem;
+}
+
+.card-content img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.card p {
+    margin: 0 0 1rem;
+}
+
+.card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+footer {
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+
+    background-color: #17324d;
+    color: #ffffff;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+
+@media (max-width: 700px) {
+
+    #course-title {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        flex: none;
+        width: 100%;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        padding: 1.5rem 1rem;
+    }
+
+    main h1 {
+        font-size: 1.8rem;
+    }
+
+    .card-content {
+        grid-template-columns: 1fr;
+    }
+}
