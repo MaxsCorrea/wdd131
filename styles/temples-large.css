@@ -1,0 +1,71 @@
+/* ------------------------------
+   Larger Screen Layout
+------------------------------ */
+
+@media (min-width: 700px) {
+
+    /* Header */
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 1rem;
+    }
+
+    .site-title {
+        padding: 1.5rem 0;
+        text-align: left;
+        font-size: 1.8rem;
+    }
+
+
+    /* Hide hamburger on larger screens */
+
+    .menu-button {
+        display: none;
+    }
+
+
+    /* Navigation */
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    nav a {
+        min-width: 90px;
+        padding: 1rem 0.9rem;
+    }
+
+
+    /* Main */
+
+    main {
+        padding: 2.5rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+
+    /* Temple Grid */
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+
+    /* Figures */
+
+    figure img {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album | WDD 131</title>
+
+    <meta
+        name="description"
+        content="A responsive temple album featuring temples from around the world."
+    >
+
+    <meta name="author" content="Maximiliano Correa">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <span class="site-title">Temple Album</span>
+
+            <button
+                id="menu-button"
+                class="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="#" class="active">Home</a>
+                <a href="#">Old</a>
+                <a href="#">New</a>
+                <a href="#">Large</a>
+                <a href="#">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+
+        <div class="temple-grid">
+
+            <figure>
+                <img
+                    src="images/temple-placeholder.jpg"
+                    alt="Temple building"
+                    loading="lazy"
+                >
+                <figcaption>Buenos Aires Argentina Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/dctemple.jpg"
+                    alt="Temple building"
+                    loading="lazy"
+                >
+                <figcaption>Washington DC Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/lehi.jpg"
+                    alt="Temple building"
+                    loading="lazy"
+                >
+                <figcaption>Lehi Utah Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/mendoza.jpg"
+                    alt="Temple building"
+                    loading="lazy"
+                >
+                <figcaption>Mendoza Argentina Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/nauvoo.jpg"
+                    alt="Temple building"
+                    loading="lazy"
+                >
+                <figcaption>Nauvoo Illinois Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/oakland.jpg"
+                    alt="Temple building"
+                    loading="lazy"
+                >
+                <figcaption>Oakland California Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/provo.jpg"
+                    alt="Temple building"
+                    loading="lazy"
+                >
+                <figcaption>Provo Utah Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/rome.jpg"
+                    alt="Temple building"
+                    loading="lazy"
+                >
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img
+                    src="images/saltlake.jpg"
+                    alt="Temple building"
+                    loading="lazy"
+                >
+                <figcaption>Salt Lake Utah Temple</figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Maximiliano Correa - Argentina
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
