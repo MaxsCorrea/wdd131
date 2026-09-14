@@ -1,9 +1,13 @@
 /* ------------------------------
-   General Styles
+   Reset and General Styles
 ------------------------------ */
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -32,35 +36,45 @@ header {
 .site-title {
     display: block;
     padding: 1.25rem 1rem;
+
     font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
+
     text-align: center;
 }
 
 
 /* ------------------------------
-   Hamburger Button
+   Hamburger Menu
 ------------------------------ */
 
 .menu-button {
     display: block;
     width: 100%;
+    min-height: 48px;
+
     padding: 0.75rem;
 
-    border: none;
+    border: 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 
     background-color: #17324d;
     color: #ffffff;
 
     font-size: 1.5rem;
+
     cursor: pointer;
 }
 
 .menu-button:hover,
 .menu-button:focus {
     background-color: #245b7a;
+}
+
+.menu-button:focus-visible {
+    outline: 3px solid #f4b942;
+    outline-offset: -3px;
 }
 
 
@@ -78,18 +92,21 @@ nav.open {
 }
 
 nav a {
+    display: block;
+
+    min-height: 48px;
     padding: 0.9rem 1rem;
+
+    border: 2px solid transparent;
 
     color: #ffffff;
     text-align: center;
     text-decoration: none;
     font-weight: 600;
 
-    border: 2px solid transparent;
-
     transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
 nav a:hover,
@@ -98,8 +115,9 @@ nav a:focus {
     color: #17324d;
 }
 
-nav a.active {
-    background-color: #245b7a;
+nav a:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: -3px;
 }
 
 
@@ -120,6 +138,8 @@ h1 {
 
     font-family: "Montserrat", sans-serif;
     font-size: 2rem;
+    font-weight: 700;
+
     text-align: center;
 }
 
@@ -136,25 +156,30 @@ h1 {
 
 
 /* ------------------------------
-   Figure
+   Temple Figures
 ------------------------------ */
 
 figure {
     margin: 0;
 
+    overflow: hidden;
+
     background-color: #ffffff;
+
     border: 1px solid #d6dde5;
     border-radius: 8px;
-
-    overflow: hidden;
 
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 figure img {
+    display: block;
+
     width: 100%;
     height: auto;
-    display: block;
+
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }
 
 figcaption {
@@ -165,6 +190,7 @@ figcaption {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: 600;
+
     text-align: center;
 }
 
@@ -189,7 +215,7 @@ footer p {
 
 
 /* ------------------------------
-   Small Screens
+   Small Mobile Screens
 ------------------------------ */
 
 @media (max-width: 400px) {
