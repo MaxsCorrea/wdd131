@@ -1,0 +1,204 @@
+/* =========================
+   Global Variables
+========================= */
+
+:root {
+    --primary-color: #006b3c;
+    --secondary-color: #f4d03f;
+    --accent-color: #d62828;
+    --background-color: #f5f5f5;
+    --text-color: #222;
+    --white: #ffffff;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   General Styles
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+
+/* =========================
+   Main
+========================= */
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   Sections
+========================= */
+
+.place-info,
+.weather {
+    background-color: var(--white);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.place-info h2,
+.weather h2 {
+    margin-top: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.info-content p,
+.weather-content p {
+    margin: 0.5rem 0;
+}
+
+
+/* =========================
+   Weather
+========================= */
+
+.weather {
+    text-align: center;
+}
+
+.weather-icon {
+    display: block;
+    width: 80px;
+    margin: 1rem auto;
+}
+
+.weather-content {
+    text-align: left;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0.25rem;
+}
+
+
+/* =========================
+   Wider Screens
+========================= */
+
+@media screen and (min-width: 700px) {
+
+    body {
+        max-width: 1160px;
+        margin: 0 auto;
+        background-color: #eeeeee;
+    }
+
+    header {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .place-info,
+    .weather {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .place-info {
+        top: 2rem;
+        left: 2rem;
+        width: 300px;
+    }
+
+    .weather {
+        bottom: 2rem;
+        right: 2rem;
+        width: 300px;
+    }
+
+    .place-info h2,
+    .weather h2 {
+        background-color: var(--primary-color);
+        margin: -1rem -1rem 1rem -1rem;
+    }
+
+    /* Required pseudo-element */
+    .weather h2::after {
+        content: " ⛅";
+        margin-left: 0.5rem;
+    }
+
+    /* The SVG is only needed in the mobile layout */
+    .weather-icon {
+        display: none;
+    }
+
+    footer {
+        margin-top: 0;
+    }
+}
