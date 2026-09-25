@@ -1,3 +1,4 @@
+javascript
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -66,29 +67,27 @@ const temples = [
             "https://churchofjesuschristtemples.org/assets/img/temples/cordoba-argentina-temple/cordoba-argentina-temple-12744.jpg"
     },
     {
-        templeName: "Buenos Aires Argentina",
-        location: "Ciudad Evita, Buenos Aires, Argentina",
-        dedicated: "1986, January, 17",
-        area: 30659,
+        templeName: "Rexburg Idaho",
+        location: "Rexburg, Idaho, United States",
+        dedicated: "2008, February, 10",
+        area: 57504,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/buenos-aires-argentina-temple/buenos-aires-argentina-temple-1272.jpg"
+            "https://assets.churchofjesuschrist.org/47/74/4774c99d0cbd11ec99c6eeeeac1e03b2a4fa3f3c/rexburg_idaho_temple.jpeg"
     },
     {
-        templeName: "Rome Italy",
-        location: "Rome, Italy",
-        dedicated: "2019, March, 10",
-        area: 41010,
+        templeName: "Accra Ghana",
+        location: "Accra, Ghana",
+        dedicated: "2004, January, 11",
+        area: 17500,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-3029.jpg"
+            "https://assets.churchofjesuschrist.org/5d/e4/5de4eea3c8f411ec8c47eeeeac1e76e52c0345cb/accra_ghana_temple.jpeg"
     }
 ];
 
 const templeCards = document.querySelector("#temple-cards");
 const pageTitle = document.querySelector("#page-title");
-
 const navigation = document.querySelector("#navigation");
 const filterLinks = document.querySelectorAll("#navigation a");
-
 const menuButton = document.querySelector("#menu");
 
 function displayTemples(templeList) {
@@ -175,6 +174,7 @@ function filterTemples(filter) {
         default:
             filteredTemples = temples;
             title = "Home";
+            break;
     }
 
     pageTitle.textContent = title;
@@ -212,11 +212,7 @@ menuButton.addEventListener("click", () => {
     const isOpen = navigation.classList.contains("open");
 
     menuButton.textContent = isOpen ? "✕" : "☰";
-
-    menuButton.setAttribute(
-        "aria-expanded",
-        isOpen.toString()
-    );
+    menuButton.setAttribute("aria-expanded", isOpen.toString());
 
     menuButton.setAttribute(
         "aria-label",

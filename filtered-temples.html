@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +24,6 @@
 
     <link rel="stylesheet" href="styles/filtered-temples.css">
 
-
     <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
@@ -37,30 +37,17 @@
                 type="button"
                 aria-label="Open navigation menu"
                 aria-expanded="false"
+                aria-controls="navigation"
             >
                 ☰
             </button>
 
             <nav id="navigation" aria-label="Temple filters">
-                <button type="button" data-filter="home" class="active">
-                    Home
-                </button>
-
-                <button type="button" data-filter="old">
-                    Old
-                </button>
-
-                <button type="button" data-filter="new">
-                    New
-                </button>
-
-                <button type="button" data-filter="large">
-                    Large
-                </button>
-
-                <button type="button" data-filter="small">
-                    Small
-                </button>
+                <a href="#" data-filter="home" class="active">Home</a>
+                <a href="#" data-filter="old">Old</a>
+                <a href="#" data-filter="new">New</a>
+                <a href="#" data-filter="large">Large</a>
+                <a href="#" data-filter="small">Small</a>
             </nav>
         </div>
     </header>
@@ -73,7 +60,7 @@
             class="temple-grid"
             aria-label="Temple album"
         >
-            <!-- Temple cards are generated with JavaScript -->
+            <!-- Temple cards are generated dynamically with JavaScript -->
         </section>
     </main>
 
@@ -88,3 +75,4 @@
     </footer>
 </body>
 </html>
+```
