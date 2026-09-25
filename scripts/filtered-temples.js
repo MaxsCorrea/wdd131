@@ -87,7 +87,7 @@ const templeCards = document.querySelector("#temple-cards");
 const pageTitle = document.querySelector("#page-title");
 
 const navigation = document.querySelector("#navigation");
-const filterButtons = document.querySelectorAll("#navigation button");
+const filterLinks = document.querySelectorAll("#navigation a");
 
 const menuButton = document.querySelector("#menu");
 
@@ -181,22 +181,28 @@ function filterTemples(filter) {
     displayTemples(filteredTemples);
 }
 
-filterButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-        const filter = button.dataset.filter;
+filterLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
 
-        filterButtons.forEach((navButton) => {
-            navButton.classList.remove("active");
+        const filter = link.dataset.filter;
+
+        filterLinks.forEach((navLink) => {
+            navLink.classList.remove("active");
         });
 
-        button.classList.add("active");
+        link.classList.add("active");
 
         filterTemples(filter);
 
         navigation.classList.remove("open");
+
         menuButton.textContent = "☰";
         menuButton.setAttribute("aria-expanded", "false");
-        menuButton.setAttribute("aria-label", "Open navigation menu");
+        menuButton.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+        );
     });
 });
 
