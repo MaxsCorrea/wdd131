@@ -58,28 +58,28 @@ const temples = [
 
     // Three additional temples
     {
-        templeName: "Córdoba Argentina",
-        location: "Córdoba, Argentina",
-        dedicated: "2015, May, 17",
+        templeName: "Vernal, Utah",
+        location: "Vernal, Utah, United States",
+        dedicated: "1997, November, 4",
         area: 34369,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/cordoba-argentina-temple/cordoba-argentina-temple-12744.jpg"
+            "https://churchofjesuschristtemples.org/vernal-utah-temple/photographs/#Gallery-1"
     },
     {
-        templeName: "Rexburg Idaho",
-        location: "Rexburg, Idaho, United States",
-        dedicated: "2008, February, 10",
+        templeName: "Boise Idaho",
+        location: "Boise, Idaho, United States",
+        dedicated: "1984, May, 30",
         area: 57504,
         imageUrl:
-            "https://assets.churchofjesuschrist.org/47/74/4774c99d0cbd11ec99c6eeeeac1e03b2a4fa3f3c/rexburg_idaho_temple.jpeg"
+            "https://churchofjesuschristtemples.org/boise-idaho-temple/photographs/#Official-10"
     },
     {
-        templeName: "Accra Ghana",
-        location: "Accra, Ghana",
-        dedicated: "2004, January, 11",
+        templeName: "Mendoza Argentina",
+        location: "Mendoza, Argentina",
+        dedicated: "2024, September, 22",
         area: 17500,
         imageUrl:
-            "https://assets.churchofjesuschrist.org/5d/e4/5de4eea3c8f411ec8c47eeeeac1e76e52c0345cb/accra_ghana_temple.jpeg"
+            "https://churchofjesuschristtemples.org/mendoza-argentina-temple/photographs/#Official-10"
     }
 ];
 
