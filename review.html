@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Review Submitted | WDD 131</title>
+
+    <meta
+        name="description"
+        content="Confirmation page for a successfully submitted product review."
+    >
+    <meta name="author" content="Maximiliano Correa">
+
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+
+        <section class="confirmation">
+
+            <h2>Thank You!</h2>
+
+            <p>
+                Your product review has been submitted successfully.
+            </p>
+
+            <div class="review-count">
+                <p>
+                    Reviews completed:
+                    <span id="reviewCount">0</span>
+                </p>
+            </div>
+
+            <a href="form.html" class="back-link">
+                Submit Another Review
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            | Maximiliano Correa
+            | Argentina
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
