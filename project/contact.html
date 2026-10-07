@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request an IT consultation with TechBridge for your small business or startup.">
+  <meta name="author" content="Maximiliano Correa"><title>Contact | TechBridge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/techbridge.css"><script src="scripts/techbridge.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="logo" href="index.html" aria-label="TechBridge home"><span aria-hidden="true">TB</span>TechBridge</a><button id="menu-button" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button><nav id="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a class="active" href="contact.html" aria-current="page">Contact</a></nav></header>
+  <main>
+    <section class="page-hero"><p class="eyebrow">Start a conversation</p><h1>Tell us about your IT needs</h1><p>Complete the form and we will use your information to prepare a focused first conversation.</p></section>
+    <section class="section contact-layout">
+      <div><h2>What happens next?</h2><ol class="steps"><li><span>1</span><div><strong>We review your request</strong><p>We identify the services most relevant to your situation.</p></div></li><li><span>2</span><div><strong>We schedule a conversation</strong><p>We discuss your priorities and desired outcome.</p></div></li><li><span>3</span><div><strong>You receive a recommendation</strong><p>We outline practical next steps.</p></div></li></ol><img src="images/support-team.svg" alt="IT specialist helping a business customer" width="560" height="420" loading="lazy"></div>
+      <form id="consultation-form" method="get" action="thankyou.html">
+        <fieldset><legend>Your information</legend>
+          <label for="name">Full name *</label><input id="name" name="name" type="text" autocomplete="name" required>
+          <label for="email">Business email *</label><input id="email" name="email" type="email" autocomplete="email" required>
+          <label for="company">Company name</label><input id="company" name="company" type="text" autocomplete="organization">
+          <label for="team-size">Team size *</label><select id="team-size" name="team-size" required><option value="" disabled selected>Select your team size</option><option value="1-10">1–10 employees</option><option value="11-50">11–50 employees</option><option value="51-100">51–100 employees</option><option value="101+">More than 100 employees</option></select>
+        </fieldset>
+        <fieldset><legend>How can we help?</legend>
+          <label for="service-interest">Primary service *</label><select id="service-interest" name="service" required><option value="" disabled selected>Select a service</option><option value="Microsoft 365">Microsoft 365</option><option value="Cybersecurity">Cybersecurity</option><option value="Endpoint Management">Endpoint Management</option><option value="Cloud Solutions">Cloud Solutions</option><option value="IT Support">IT Support</option></select>
+          <label for="message">Business challenge *</label><textarea id="message" name="message" rows="6" minlength="20" required placeholder="Briefly describe the challenge you would like to solve."></textarea>
+          <label class="checkbox"><input name="updates" type="checkbox" value="yes">Send me occasional practical IT tips.</label>
+        </fieldset>
+        <p class="note">Fields marked with * are required.</p><button class="button primary submit" type="submit">Request IT Consultation</button>
+      </form>
+    </section>
+  </main>
+  <footer><div><strong>TechBridge IT Solutions</strong><p>Practical IT services for small businesses and startups.</p></div><div class="footer-links"><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="references.html">References</a></div><p class="copyright">&copy; <span class="current-year"></span> TechBridge IT Solutions | Maximiliano Correa</p></footer>
+</body>
+</html>
